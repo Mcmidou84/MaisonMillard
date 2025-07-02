@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"></noscript>
+  <style>
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: .75rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./olive.svg" height="30" alt="Maison Millard Logo"/>Maison Millard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <img src="./Maison millard.svg" class="img-fluid" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+    <h1 class="fw-bold text-body-emphasis" style="font-size: 1rem; margin-top: 2rem;">Artisan Nougatier Confiseur</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        Deux siècles de gourmandise...
+        Artisan confiseur depuis 1894, la Maison Millard, écrit son Histoire avec enthousiasme et passion. Animés du désir intense d’atteindre l’excellence, nous poursuivons avec considération le chemin initié par nos ancêtres. Dans les cuisines, chaudrons de cuivre et bains-marie sont toujours à l’honneur, pour des cuissons lentes et douces, respectueuses des qualités gustatives, des matières premières choisies avec grand soin et accommodées selon les recettes ancestrales. Transmission, Création et Innovation sont au coeur de notre État d’esprit depuis toujours.
+      </p>
+    </div>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Commander</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Nous contacter</button>
+    </div>
+  </div>
+
+  <div class="photos d-flex justify-content-center">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="width:50vh;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="olives-noires-et-vertes.jpg" class="d-block w-100" alt="Olives" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="huile.jpg" class="d-block w-100" alt="Huile" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="olivier.jpg" class="d-block w-100" alt="Olivier" loading="lazy">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous" async></script>
+</body>
+</html>
